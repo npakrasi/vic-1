@@ -32,7 +32,7 @@ Cleanup VIC Appliance On Test Server
     ${output}=  Run  govc vm.destroy ${vch-name}
     ${output}=  Run  govc pool.destroy %{GOVC_RESOURCE_POOL}/${vch-name}
     ${output}=  Run  govc datastore.rm ${vch-name}
-    ${output}=  Run  govc datastore.rm VIC
+    #${output}=  Run  govc datastore.rm VIC
     ${output}=  Run  rm -f ${vch-name}-*.pem
 
 Get State Of Github Issue
